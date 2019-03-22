@@ -41,7 +41,7 @@ num_sims = ARGV[0].to_i # How many times to run the simulation
 num_sims = 1 if num_sims.zero?
 strategy = ARGV[1] # 'switch' or 'stay'
 strategy = 'stay' unless strategy == 'switch'
-verbose = false # Whether to print the events of each simulation
+verbose = (num_sims == 1) # Whether to print the events of each simulation
 
 # Run simulations
 win_count = 0
