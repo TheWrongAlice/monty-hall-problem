@@ -51,4 +51,4 @@ num_sims.times {
 
 # Print results
 puts "Ran #{num_sims} simulations with strategy '#{strategy}'"
-puts "The player won #{win_count} times (#{100 / num_sims * win_count}% win rate)"
+puts "The player won #{win_count} times (#{(win_count.to_f / num_sims.to_f) * 100}% win rate)"
